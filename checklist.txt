@@ -1,0 +1,25 @@
+Ask for memory leakage test
+Not sure still about the memory leakage
+
+Code for memory leakage
+
+	cout << "\n\n";
+	string answer;
+  cout << "Type anything to continue" << endl;
+  cin >> answer;
+  for (int i = 0; i < 10000000; i++){
+    tree.insert(i,"hello");
+  }
+  cout << "Type anything to continue" << endl;
+  cin >> answer;
+
+
+  Things to know for memory leakage
+
+  ps -ef | grep proj
+  => first number is pid
+  top -p <pid>
+  Look for the miB---------------used
+
+
+  problem when deleting the value in linear probing[tomb stone solve the problem]
